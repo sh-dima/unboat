@@ -5,4 +5,10 @@ package dev.enderman.unboat
 
 import org.bukkit.plugin.java.JavaPlugin
 
-class Unboat : JavaPlugin()
+@Suppress("unused")
+class Unboat : JavaPlugin() {
+    override fun onEnable() {
+        server.pluginManager.registerEvents(BoatListener(), this)
+        server.pluginManager.registerEvents(AggravateListener(), this)
+    }
+}
