@@ -52,6 +52,7 @@ tasks.withType<AbstractArchiveTask>().configureEach {
     isReproducibleFileOrder = true
 
     from("LICENSE")
+    from("README.md")
 }
 
 tasks.withType<ShadowJar>().configureEach {
