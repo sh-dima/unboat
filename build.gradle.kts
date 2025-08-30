@@ -50,6 +50,8 @@ tasks.named<Test>("test") {
 tasks.withType<AbstractArchiveTask>().configureEach {
     isPreserveFileTimestamps = false
     isReproducibleFileOrder = true
+
+    from("LICENSE")
 }
 
 tasks.withType<ShadowJar>().configureEach {
