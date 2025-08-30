@@ -56,7 +56,7 @@ tasks.withType<ShadowJar>().configureEach {
     minimize()
 
     enableAutoRelocation = true
-    relocationPrefix = "dev.enderman.dependencies"
+    relocationPrefix = "dev.enderman.unboat.dependencies"
 }
 
 sourceSets.main {
@@ -65,7 +65,7 @@ sourceSets.main {
             name = "Unboat"
             description = "A Minecraft Paper plugin that prevents aggravated mobs from getting stuck in boats"
 
-            main = "dev.enderman.Unboat"
+            main = "dev.enderman.unboat.Unboat"
             apiVersion = "1.21.8"
             version = "0.1.0-SNAPSHOT"
 
