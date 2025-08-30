@@ -1,3 +1,4 @@
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import java.util.jar.Attributes
 
 /*
@@ -10,6 +11,7 @@ import java.util.jar.Attributes
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.shadow)
 
     alias(libs.plugins.paper)
     alias(libs.plugins.paper.convention)
@@ -48,6 +50,13 @@ tasks.named<Test>("test") {
 tasks.withType<AbstractArchiveTask>().configureEach {
     isPreserveFileTimestamps = false
     isReproducibleFileOrder = true
+}
+
+tasks.withType<ShadowJar>().configureEach {
+    minimize()
+
+    enableAutoRelocation = true
+    relocationPrefix = "dev.enderman.dependencies"
 }
 
 sourceSets.main {
