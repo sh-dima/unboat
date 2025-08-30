@@ -53,9 +53,10 @@ tasks.withType<AbstractArchiveTask>().configureEach {
 sourceSets.main {
     resourceFactory {
         paperPluginYaml {
-            name = "Template"
+            name = "Unboat"
+            description = "A Minecraft Paper plugin that prevents aggravated mobs from getting stuck in boats"
 
-            main = "org.example.Plugin"
+            main = "dev.enderman.Unboat"
             apiVersion = "1.21.8"
             version = "0.1.0-SNAPSHOT"
 
@@ -63,7 +64,7 @@ sourceSets.main {
                 "Esoteric Enderman"
             )
 
-            website = "https://gitlab.com/esoterictemplates/template-minecraft-plugin"
+            website = "https://gitlab.com/esotericenderman/unboat"
         }
     }
 }
