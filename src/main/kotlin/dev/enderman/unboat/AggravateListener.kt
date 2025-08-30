@@ -12,7 +12,7 @@ class AggravateListener : Listener {
         val entity = event.entity
 
         if (entity !is Mob) return
-        if (entity.target == null) return
+        if (event.target == null) return
 
         entity.leaveVehicle()
     }
