@@ -20,6 +20,8 @@
 					buildInputs = with pkgs; [
 						gradle
 						udev
+
+						gimp
 					];
 
 					shellHook = ''
