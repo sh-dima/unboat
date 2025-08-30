@@ -53,6 +53,9 @@ tasks.withType<AbstractArchiveTask>().configureEach {
 
     from("LICENSE")
     from("README.md")
+    from("assets/text/licenses") {
+        into("licenses")
+    }
 }
 
 tasks.withType<ShadowJar>().configureEach {
