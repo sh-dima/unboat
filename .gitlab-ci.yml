@@ -9,6 +9,13 @@ build:
   image: nixos/nix:2.18.1
   script:
     - nix --extra-experimental-features 'nix-command flakes' develop --command gradle build
+    - sha1sum build/libs/*
+    - sha224sum build/libs/*
+    - sha256sum build/libs/*
+    - sha384sum build/libs/*
+    - sha512sum build/libs/*
+    - shasum build/libs/*
+    - md5sum build/libs/*
   cache:
     key: gradle-cache
     paths:
