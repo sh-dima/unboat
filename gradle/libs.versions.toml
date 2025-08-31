@@ -2,9 +2,13 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 
 [versions]
+metrics = "3.1.0"
+
 junit-jupiter-engine = "5.12.1"
 
 [libraries]
+metrics = { module = "org.bstats:bstats-bukkit", version.ref = "metrics" }
+
 junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter-engine" }
 
 [plugins]

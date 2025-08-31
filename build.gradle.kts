@@ -24,6 +24,8 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.metrics)
+
     // Use the Kotlin JUnit 5 integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 
