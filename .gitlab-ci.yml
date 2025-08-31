@@ -14,7 +14,6 @@ build:
     - sha256sum build/libs/*
     - sha384sum build/libs/*
     - sha512sum build/libs/*
-    - shasum build/libs/*
     - md5sum build/libs/*
   cache:
     key: gradle-cache
