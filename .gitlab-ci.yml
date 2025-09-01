@@ -19,3 +19,7 @@ build:
     key: gradle-cache
     paths:
       - .gradle/
+  artifacts:
+    paths:
+      - build/libs/
+    expire_in: 7 days
