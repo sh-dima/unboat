@@ -3,6 +3,8 @@ Unboat
 
 By [Esoteric Enderman](https://enderman.dev) <[EsotericEnderman@proton.me](mailto:EsotericEnderman@proton.me)>
 
+Unboat is a Minecraft Paper plugin that prevents aggravated mobs from getting stuck in boats.
+
 Disclaimer
 ----------
 
