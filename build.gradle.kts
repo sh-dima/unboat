@@ -12,6 +12,7 @@ plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.shadow)
+    alias(libs.plugins.release)
 
     alias(libs.plugins.paper)
     alias(libs.plugins.paper.convention)
@@ -22,6 +23,8 @@ repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
 }
+
+version = scmVersion.version
 
 dependencies {
     implementation(libs.metrics)
@@ -103,7 +106,7 @@ sourceSets.main {
 
             main = "dev.enderman.unboat.Unboat"
             apiVersion = "1.21.8"
-            version = "0.1.0-SNAPSHOT"
+            version = project.version.toString()
 
             authors.add(
                 "Esoteric Enderman"
