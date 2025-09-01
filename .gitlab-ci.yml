@@ -19,6 +19,3 @@ build:
     key: gradle-cache
     paths:
       - .gradle/
-  artifacts:
-    paths:
-      - build/libs/
