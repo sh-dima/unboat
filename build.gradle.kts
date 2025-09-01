@@ -58,6 +58,34 @@ tasks.withType<AbstractArchiveTask>().configureEach {
     from("assets/text/licenses") {
         into("licenses")
     }
+
+    filePermissions {
+        user.read = true
+        user.write = true
+        user.execute = false
+
+        group.read = true
+        group.write = false
+        group.execute = false
+
+        other.read = true
+        other.write = false
+        other.execute = false
+    }
+
+    dirPermissions {
+        user.read = true
+        user.write = true
+        user.execute = true
+
+        group.read = true
+        group.write = false
+        group.execute = true
+
+        other.read = false
+        other.write = false
+        other.execute = true
+    }
 }
 
 tasks.withType<ShadowJar>().configureEach {
