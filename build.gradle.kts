@@ -14,6 +14,12 @@ repositories {
     mavenCentral()
 }
 
+scmVersion {
+    tag {
+        prefix = ""
+    }
+}
+
 version = scmVersion.version
 
 dependencies {
