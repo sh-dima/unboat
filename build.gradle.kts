@@ -104,7 +104,7 @@ bukkit {
     description = "A Minecraft Paper plugin that prevents aggravated mobs from getting stuck in boats"
 
     main = "dev.enderman.unboat.Unboat"
-    apiVersion = "1.21.8"
+    apiVersion = "1.20"
     version = project.version.toString()
 
     authors = listOf(
