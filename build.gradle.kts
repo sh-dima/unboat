@@ -6,8 +6,9 @@ plugins {
     alias(libs.plugins.release)
 
     alias(libs.plugins.paper)
-    alias(libs.plugins.paper.convention)
     alias(libs.plugins.paper.run)
+
+    alias(libs.plugins.yml)
 }
 
 repositories {
@@ -23,6 +24,8 @@ scmVersion {
 version = scmVersion.version
 
 dependencies {
+    library(kotlin("stdlib"))
+
     implementation(libs.metrics)
 
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
@@ -49,9 +52,6 @@ tasks.withType<AbstractArchiveTask>().configureEach {
 
     from("LICENSE")
     from("README.md")
-    from("assets/text/licenses") {
-        into("licenses")
-    }
 
     filePermissions {
         user.read = true
@@ -87,23 +87,29 @@ tasks.withType<ShadowJar>().configureEach {
 
     enableAutoRelocation = true
     relocationPrefix = "dev.enderman.unboat.dependencies"
+
+    archiveClassifier = ""
+
+    from("assets/text/licenses") {
+        into("licenses")
+    }
 }
 
-sourceSets.main {
-    resourceFactory {
-        paperPluginYaml {
-            name = "Unboat"
-            description = "A Minecraft Paper plugin that prevents aggravated mobs from getting stuck in boats"
+tasks.named<Jar>("jar") {
+    enabled = false
+}
 
-            main = "dev.enderman.unboat.Unboat"
-            apiVersion = "1.21.8"
-            version = project.version.toString()
+bukkit {
+    name = "Unboat"
+    description = "A Minecraft Paper plugin that prevents aggravated mobs from getting stuck in boats"
 
-            authors.add(
-                "Esoteric Enderman"
-            )
+    main = "dev.enderman.unboat.Unboat"
+    apiVersion = "1.21.8"
+    version = project.version.toString()
 
-            website = "https://gitlab.com/esotericenderman/unboat"
-        }
-    }
+    authors = listOf(
+        "Esoteric Enderman"
+    )
+
+    website = "https://gitlab.com/esotericenderman/unboat"
 }
