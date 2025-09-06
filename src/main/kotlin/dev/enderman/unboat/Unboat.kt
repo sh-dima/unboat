@@ -12,6 +12,10 @@ class Unboat : JavaPlugin() {
         server.pluginManager.registerEvents(BoatListener(), this)
         server.pluginManager.registerEvents(AggravateListener(), this)
 
-        Metrics(this, id)
+        try {
+            Metrics(this, id)
+        } catch (exception: Exception) {
+            exception.printStackTrace()
+        }
     }
 }
