@@ -18,6 +18,7 @@
 			in {
 				devShell = pkgs.mkShell {
 					buildInputs = with pkgs; [
+					    git
 						gradle
 						udev
 

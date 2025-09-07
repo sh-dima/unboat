@@ -3,7 +3,6 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.shadow)
-    alias(libs.plugins.release)
 
     alias(libs.plugins.paper)
     alias(libs.plugins.paper.run)
@@ -15,13 +14,12 @@ repositories {
     mavenCentral()
 }
 
-scmVersion {
-    tag {
-        prefix = ""
-    }
-}
-
-version = scmVersion.version
+version = ProcessBuilder("git", "describe", "--tags", "--always", "--dirty")
+    .start()
+    .inputStream
+    .bufferedReader()
+    .readText()
+    .trim()
 
 dependencies {
     library(kotlin("stdlib"))

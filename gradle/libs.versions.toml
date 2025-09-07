@@ -17,5 +17,3 @@ paper-run = { id = "xyz.jpenilla.run-paper", version = "2.3.1" }
 yml = { id = "de.eldoria.plugin-yml.bukkit", version = "0.8.0" }
 
 shadow = { id = "com.gradleup.shadow", version = "9.1.0" }
-
-release = { id = "pl.allegro.tech.build.axion-release", version = "1.20.1" }
