@@ -109,5 +109,5 @@ bukkit {
         "Esoteric Enderman"
     )
 
-    website = "https://gitlab.com/esotericenderman/unboat"
+    website = "https://gitlab.com/dimafyi/unboat"
 }
