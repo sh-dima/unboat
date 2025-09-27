@@ -8,6 +8,7 @@ Links
 
 * [Source][source]
 * [Modrinth][modrinth]
+* [bStats][bstats]
 * [E-mail][email]
 
 Disclaimer
@@ -22,6 +23,7 @@ Disclaimer
 
 [source]: https://gitlab.com/dimafyi/unboat (The source code of this project)
 [modrinth]: https://modrinth.com/project/unboat (This project on Modrinth)
+[bstats]: https://bstats.org/plugin/bukkit/Unboat/27128 (This project on bStats)
 
 [minecraft]: https://www.minecraft.net/ (Minecraft)
 [microsoft]: https://www.microsoft.com/ (Microsoft)
