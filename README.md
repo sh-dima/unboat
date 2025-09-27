@@ -17,10 +17,10 @@ Disclaimer
 * [Esoteric Enderman][author] is the publisher and owner.
 * NOT AN OFFICIAL [MINECRAFT][minecraft] PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH [MOJANG][mojang] OR [MICROSOFT][microsoft].
 
-[author]: https://enderman.dev (Esoteric Enderman)
-[email]: mailto:EsotericEnderman@proton.me (E-mail Esoteric Enderman)
+[author]: https://gitlab.com/dimafyi/ (Dima)
+[email]: mailto:DimaFYI@proton.me (E-mail Dima)
 
-[source]: https://gitlab.com/esotericenderman/unboat (The source code of this project)
+[source]: https://gitlab.com/dimafyi/unboat (The source code of this project)
 [modrinth]: https://modrinth.com/project/unboat (This project on Modrinth)
 
 [minecraft]: https://www.minecraft.net/ (Minecraft)
