@@ -1,4 +1,4 @@
-package dev.enderman.unboat
+package io.gitlab.shdima.unboat
 
 import org.bukkit.entity.Mob
 import org.bukkit.event.EventHandler

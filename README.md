@@ -18,10 +18,10 @@ Disclaimer
 * [Dima][author] is the publisher and owner.
 * NOT AN OFFICIAL [MINECRAFT][minecraft] PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH [MOJANG][mojang] OR [MICROSOFT][microsoft].
 
-[author]: https://gitlab.com/dimafyi/ (Dima)
-[email]: mailto:DimaFYI@proton.me (E-mail Dima)
+[author]: https://gitlab.com/shdima/ (The author of this project)
+[email]: mailto:DimaFYI@proton.me (E-mail the author of this project)
 
-[source]: https://gitlab.com/dimafyi/unboat (The source code of this project)
+[source]: https://gitlab.com/shdima/unboat (The source code of this project)
 [modrinth]: https://modrinth.com/project/unboat (This project on Modrinth)
 [bstats]: https://bstats.org/plugin/bukkit/Unboat/27128 (This project on bStats)
 

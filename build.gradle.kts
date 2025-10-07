@@ -84,7 +84,7 @@ tasks.withType<ShadowJar>().configureEach {
     minimize()
 
     enableAutoRelocation = true
-    relocationPrefix = "dev.enderman.unboat.dependencies"
+    relocationPrefix = "io.gitlab.shdima.unboat.dependencies"
 
     archiveClassifier = ""
 
@@ -101,7 +101,7 @@ bukkit {
     name = "Unboat"
     description = "A Minecraft Paper plugin that prevents aggravated mobs from getting stuck in boats"
 
-    main = "dev.enderman.unboat.Unboat"
+    main = "io.gitlab.shdima.unboat.Unboat"
     apiVersion = "1.20"
     version = project.version.toString()
 
@@ -109,5 +109,5 @@ bukkit {
         "Esoteric Enderman"
     )
 
-    website = "https://gitlab.com/dimafyi/unboat"
+    website = "https://gitlab.com/shdima/unboat"
 }

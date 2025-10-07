@@ -1,4 +1,4 @@
-package dev.enderman.unboat
+package io.gitlab.shdima.unboat
 
 import org.bstats.bukkit.Metrics
 import org.bukkit.plugin.java.JavaPlugin
