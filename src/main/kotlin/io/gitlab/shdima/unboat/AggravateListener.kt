@@ -1,5 +1,7 @@
 package io.gitlab.shdima.unboat
 
+import org.bukkit.entity.Boat
+import org.bukkit.entity.Minecart
 import org.bukkit.entity.Mob
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
@@ -13,6 +15,9 @@ class AggravateListener : Listener {
 
         if (entity !is Mob) return
         if (event.target == null) return
+
+        val vehicle = entity.vehicle
+        if (vehicle !is Boat && vehicle !is Minecart) return
 
         entity.leaveVehicle()
     }
