@@ -14,8 +14,8 @@ Links
 Disclaimer
 ----------
 
-* [Dima][author] (not [Mojang][mojang] or [Microsoft][microsoft]) is responsible for the product or service.
-* [Dima][author] is the publisher and owner.
+* [The author][author] (not [Mojang][mojang] or [Microsoft][microsoft]) is responsible for the product or service.
+* [The author][author] is the publisher and owner.
 * NOT AN OFFICIAL [MINECRAFT][minecraft] PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH [MOJANG][mojang] OR [MICROSOFT][microsoft].
 
 [author]: https://gitlab.com/shdima/ (The author of this project)
