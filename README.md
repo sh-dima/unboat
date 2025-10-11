@@ -8,6 +8,7 @@ Links
 
 * [Source][source]
 * [Modrinth][modrinth]
+* [Hangar][hangar]
 * [bStats][bstats]
 * [E-mail][email]
 
@@ -23,6 +24,7 @@ Disclaimer
 
 [source]: https://gitlab.com/shdima/unboat (The source code of this project)
 [modrinth]: https://modrinth.com/project/unboat (This project on Modrinth)
+[hangar]: https://hangar.papermc.io/EsotericEnderman/Unboat (This project on Hangar)
 [bstats]: https://bstats.org/plugin/bukkit/Unboat/27128 (This project on bStats)
 
 [minecraft]: https://www.minecraft.net/ (Minecraft)
