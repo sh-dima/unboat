@@ -110,7 +110,7 @@ tasks.runServer {
 
 bukkit {
     name = "Unboat"
-    description = "A Minecraft Paper plugin that prevents aggravated mobs from getting stuck in boats"
+    description = "A Minecraft plugin that prevents aggravated mobs from getting stuck in boats"
 
     main = "io.gitlab.shdima.unboat.Unboat"
     apiVersion = "1.20"

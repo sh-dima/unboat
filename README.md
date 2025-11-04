@@ -1,7 +1,7 @@
 Unboat
 ======
 
-Unboat is a Minecraft Paper plugin that prevents aggravated mobs from getting stuck in boats.
+Unboat is a Minecraft plugin that prevents aggravated mobs from getting stuck in boats.
 
 Links
 -----
