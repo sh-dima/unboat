@@ -12,7 +12,7 @@ junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", vers
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.1.20" }
 
 paper = { id = "io.papermc.paperweight.userdev", version = "2.0.0-beta.18" }
-paper-run = { id = "xyz.jpenilla.run-paper", version = "2.3.1" }
+nova = { id = "com.undefinedcreations.nova", version = "0.0.8" }
 
 yml = { id = "de.eldoria.plugin-yml.bukkit", version = "0.8.0" }
 

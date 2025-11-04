@@ -1,11 +1,12 @@
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+import com.undefinedcreations.nova.ServerType
 
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.shadow)
 
     alias(libs.plugins.paper)
-    alias(libs.plugins.paper.run)
+    alias(libs.plugins.nova)
 
     alias(libs.plugins.yml)
 }
@@ -95,6 +96,16 @@ tasks.withType<ShadowJar>().configureEach {
 
 tasks.named<Jar>("jar") {
     enabled = false
+}
+
+tasks.runServer {
+    val version = project.findProperty("minecraft.version") as? String ?: "1.21.9"
+    val software = (project.findProperty("minecraft.software") as? String ?: "paper").uppercase()
+
+    minecraftVersion(version)
+    serverType(ServerType.valueOf(software))
+    perVersionFolder(true)
+    acceptMojangEula()
 }
 
 bukkit {

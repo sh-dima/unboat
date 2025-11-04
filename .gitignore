@@ -13,7 +13,4 @@ gradlew.bat
 .kotlin
 
 # Ignore testing folder
-run/*
-
-# Don't ignore EULA agreement
-!run/eula.txt
+run/
