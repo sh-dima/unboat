@@ -100,7 +100,7 @@ tasks.named<Jar>("jar") {
 
 tasks.runServer {
     val version = project.findProperty("minecraft.version") as? String ?: "1.21.9"
-    val software = (project.findProperty("minecraft.software") as? String ?: "paper").uppercase()
+    val software = (project.findProperty("minecraft.software") as? String ?: "papermc").uppercase()
 
     minecraftVersion(version)
     serverType(ServerType.valueOf(software))
